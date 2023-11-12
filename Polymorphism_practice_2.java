@@ -19,7 +19,7 @@ class Circle extends Shape {
     }
 }
 
-class Rectangle extends Shape{
+class Rectangle extends Shape {
     double l, w;
 
     Rectangle(double l, double w) {
@@ -32,7 +32,7 @@ class Rectangle extends Shape{
     }
 }
 
-class Triangle extends Shape{
+class Triangle extends Shape {
     double base, height;
 
     Triangle(double base, double height) {
@@ -41,25 +41,25 @@ class Triangle extends Shape{
     }
 
     double calculateArea() {
-        return 0.5* base * height;
+        return 0.5 * base * height;
     }
 }
 
-public class Polymorphism_practice_2 {
+public class Polymorphism_practice_2.java {
 
     public static void main(String[] args) {
 
-        Shape s= new Circle(5);
-        Shape r= new Rectangle(5, 6);
-        Shape t= new Triangle(4, 7);
+        Shape s = new Circle(5);
+        Shape r = new Rectangle(5, 6);
+        Shape t = new Triangle(4, 7);
 
-        double ss= s.calculateArea();
-        System.out.println("Area of circle is "+ss);
+        double ss = s.calculateArea();
+        System.out.println("Area of circle is " + ss);
 
-        double rr= r.calculateArea();
-        System.out.println("Area of Rectangle is "+rr);
-        
-        double tt= t.calculateArea();
-        System.out.println("Area of Triangle is "+tt);
+        double rr = r.calculateArea();
+        System.out.println("Area of Rectangle is " + rr);
+
+        double tt = t.calculateArea();
+        System.out.println("Area of Triangle is " + tt);
     }
 }
